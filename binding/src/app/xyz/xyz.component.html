@@ -1,4 +1,22 @@
-<h2>{{greetUser()}}</h2>
-
+<!-- Property Binding  -->
 <input type="text" value="{{greetUser()}}" [id]="myId">
 <input [disabled]="isDisabled" type="text" value="{{greetUser()}}" [id]="myId">
+<h2>{{greetUser()}}</h2>
+
+<!-- Class Binding  -->
+<h2 [class]="successClass">Code Evolution</h2>
+
+<h2 [class.text-danger]="hasError">Dummy Data</h2>
+
+<h2 [ngClass]="messageClasses">Dummy Data Evolve</h2>
+
+
+<!-- Style Binding  -->
+<h2 [style.color]="hasError ? 'red' : 'green'">Style binding</h2>
+
+<h2 [style.color]="highlightColor">Style Binding 2</h2>
+
+<h2 [ngStyle]="titleStyles">Style Binding 3</h2>
+
+<!-- Event Binding  -->
+<button (click)="onClick($event)">Greet</button> {{greeting}}

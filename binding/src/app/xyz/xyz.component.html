@@ -1,3 +1,6 @@
+<br/>
+<br/>
+<br/>
 <!-- Property Binding  -->
 <input type="text" value="{{greetUser()}}" [id]="myId">
 <input [disabled]="isDisabled" type="text" value="{{greetUser()}}" [id]="myId">
@@ -20,3 +23,9 @@
 
 <!-- Event Binding  -->
 <button (click)="onClick($event)">Greet</button> {{greeting}}
+<br/>
+<br/>
+<br/>
+<!-- Template Reference -->
+<input #myInput type="text" value="">
+<button (click)="logMessage(myInput.value)">Log</button>

@@ -1,3 +1,4 @@
+import { KeyValue } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -36,6 +37,11 @@ export class XyzComponent {
     console.log(event);
     
     this.greeting = "Welcome To Angular event binding."
+  }
+
+  //Template Reference
+  logMessage(inputElement:any) {
+    console.log(inputElement);
   }
 
   greetUser() {
